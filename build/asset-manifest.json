@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/phicargo/react/static/css/main.b0af551e.css",
+    "main.js": "/phicargo/react/static/js/main.c3f663a4.js",
+    "static/js/239.a97c9a8b.chunk.js": "/phicargo/react/static/js/239.a97c9a8b.chunk.js",
+    "static/js/213.97f0e5df.chunk.js": "/phicargo/react/static/js/213.97f0e5df.chunk.js",
+    "static/js/667.315fb2b0.chunk.js": "/phicargo/react/static/js/667.315fb2b0.chunk.js",
+    "static/js/453.a047c9e7.chunk.js": "/phicargo/react/static/js/453.a047c9e7.chunk.js",
+    "static/media/ProductSans-Regular.ttf": "/phicargo/react/static/media/ProductSans-Regular.2765c69613690b1b9c03.ttf",
+    "index.html": "/phicargo/react/index.html",
+    "main.b0af551e.css.map": "/phicargo/react/static/css/main.b0af551e.css.map",
+    "main.c3f663a4.js.map": "/phicargo/react/static/js/main.c3f663a4.js.map",
+    "239.a97c9a8b.chunk.js.map": "/phicargo/react/static/js/239.a97c9a8b.chunk.js.map",
+    "213.97f0e5df.chunk.js.map": "/phicargo/react/static/js/213.97f0e5df.chunk.js.map",
+    "667.315fb2b0.chunk.js.map": "/phicargo/react/static/js/667.315fb2b0.chunk.js.map",
+    "453.a047c9e7.chunk.js.map": "/phicargo/react/static/js/453.a047c9e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0af551e.css",
+    "static/js/main.c3f663a4.js"
+  ]
+}
