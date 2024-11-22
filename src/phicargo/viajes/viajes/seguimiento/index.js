@@ -68,6 +68,44 @@ export default function BasicButtons2() {
                     </div>
                 </div>
 
+                <div className="col-lg-4 col-sm-12">
+                    <div className="row">
+
+                        <div className="col-12 mb-3">
+                            <div className="card shadow bg-white rounded">
+                                <div className="card-header">
+                                    Información del viaje
+                                </div>
+                                <div class="card-content p-3">
+                                    <div class="card-body">
+                                        <ul class="list-unstyled list-py-2 text-dark mb-0">
+                                            <li class="pb-0"><span class="card-subtitle">Datos</span></li>
+                                            <li>Vehiculo: {viaje.vehiculo}</li>
+                                            <li>Operador: {viaje.operador}</li>
+                                            <li>Ejecutiv@: {viaje.tipo_armado}</li>
+                                            <li>Cliente: {viaje.cliente}</li>
+
+                                            <li class="pt-4 pb-0"><span class="card-subtitle">Contenedores</span></li>
+                                            <li>{id_viaje}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="col-12">
+                            <div className="card shadow bg-white rounded">
+                                <div className="card-header">
+                                    Porcentaje de cumplimiento de envio de estatus del operador
+                                </div>
+                                <div class="card-content p-3">
+                                    <CumplimientoOperador></CumplimientoOperador>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="col-sm-12 col-lg-8">
                     <div className="card shadow bg-white rounded">
                         <div className="card-header">
@@ -75,17 +113,6 @@ export default function BasicButtons2() {
                         </div>
                         <div class="card-content p-5">
                             <EstatusHistorial fetchData={iniciar_viaje}></EstatusHistorial>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="col-4">
-                    <div className="card shadow bg-white rounded">
-                        <div className="card-header">
-                            Porcentaje de cumplimiento de envio de estatus del operador
-                        </div>
-                        <div class="card-content p-3">
-                            <CumplimientoOperador></CumplimientoOperador>
                         </div>
                     </div>
                 </div>

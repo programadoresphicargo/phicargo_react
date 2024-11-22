@@ -100,6 +100,13 @@ const ViajesFinalizados = ({ }) => {
       {
         accessorKey: 'pod_enviado',
         header: 'POD',
+        Cell: ({ cell }) => {
+          return cell.getValue() !== null ? (
+            <span className="badge bg-success rounded-pill" style={{ width: '60px' }}>
+              Enviado
+            </span>
+          ) : null;
+        },
       },
       {
         accessorKey: 'eir_enviado',
@@ -258,7 +265,7 @@ const ViajesFinalizados = ({ }) => {
           enableStickyHeader={true} // Opcional: si deseas un encabezado fijo
         />
       </div>
-      
+
       <Dialog
         fullScreen
         open={open}

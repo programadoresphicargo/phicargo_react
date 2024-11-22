@@ -86,7 +86,7 @@ const ViajesActivos = ({ }) => {
           } else if (tipoMovimiento === 'retorno') {
             badgeClass += 'bg-warning';
           } else if (tipoMovimiento === 'resguardo') {
-            badgeClass += 'bg-success';
+            badgeClass += 'bg-morado';
           }
 
           return (
@@ -113,8 +113,13 @@ const ViajesActivos = ({ }) => {
         header: 'Ejecutivo',
       },
       {
+        accessorKey: 'nombre_cliente',
+        header: 'Cliente',
+      },
+      {
         accessorKey: 'contenedores',
         header: 'Contenedores',
+        width: "10%",
       },
       {
         accessorKey: 'tipo_armado',

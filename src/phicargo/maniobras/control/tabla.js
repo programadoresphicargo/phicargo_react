@@ -5,6 +5,7 @@ import dayjs from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { MenuItem, Select, FormControl, InputLabel } from '@mui/material';
+import { Box } from '@mui/material';
 
 import {
   MaterialReactTable,
@@ -93,7 +94,7 @@ const Maniobras = ({ estado_maniobra }) => {
             minute: '2-digit',
             hour12: true,
           };
-      
+
           const formattedDate = date.toLocaleString('es-ES', options);
           return formattedDate;
         },
@@ -138,6 +139,16 @@ const Maniobras = ({ estado_maniobra }) => {
       {
         accessorKey: 'nombre_operador',
         header: 'Operador',
+        size: 150,
+      },
+      {
+        accessorKey: 'fecha_activacion',
+        header: 'Fecha de inicio',
+        size: 150,
+      },
+      {
+        accessorKey: 'fecha_finalizada',
+        header: 'Fecha finalizada',
         size: 150,
       },
       {
@@ -228,6 +239,19 @@ const Maniobras = ({ estado_maniobra }) => {
         fontSize: '14px',
       },
     },
+
+    renderTopToolbarCustomActions: ({ table }) => (
+      <Box
+        sx={{
+          display: 'flex',
+          gap: '16px',
+          padding: '8px',
+          alignItems: 'center',
+        }}
+      >
+        <button onClick={() => alert('Convirtiendo')} className='btn btn-sm btn-success'>Convertir a Excel</button>
+      </Box >
+    ),
   });
 
   return (
