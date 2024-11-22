@@ -249,7 +249,6 @@ const Maniobras = ({ estado_maniobra }) => {
           alignItems: 'center',
         }}
       >
-        <button onClick={() => alert('Convirtiendo')} className='btn btn-sm btn-success'>Convertir a Excel</button>
       </Box >
     ),
   });

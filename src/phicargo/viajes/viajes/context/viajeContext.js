@@ -37,7 +37,15 @@ const ViajeProvider = ({ children }) => {
             });
     };
 
-    const [viaje, setViaje] = useState({});
+    const [viaje, setViaje] = useState({
+        id: null,
+        name: '0',
+        estado: 'disponible',
+        id_cliente: '0',
+        cliente: ' ',
+        vehiculo: '0',
+        operador: '0',
+    });
 
     const [isLoading, setLoading] = useState(false);
     const [error, setError] = useState(null);
